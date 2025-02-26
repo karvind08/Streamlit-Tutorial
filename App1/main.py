@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+import numpy as np
 st.title("My First Streamlit app")
 st.text("This is text\n[and more text](that's not a Markdown link).\n")
 st.text("\nThis is another text",help='This is streamlit text')
@@ -21,3 +23,8 @@ WWw                 .iiiiiiii.                ...:
           -MMMWWWWWWWWWWWWWWWWWWWWWWMMM-
 '''
 st.code(code1, language=None)
+
+# Line Chart
+
+chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
+st.line_chart(chart_data)
