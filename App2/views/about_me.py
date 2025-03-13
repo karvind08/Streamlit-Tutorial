@@ -5,17 +5,18 @@ from forms.contacts import contact_form
 def show_contact_form():
     contact_form()
 
-st.title("About us")
+st.title("About Me")
 
 col1,col2 = st.columns(2,gap="small",vertical_alignment="center")
 
 with col1:
 #   st.image("./assets/arvind.png", width=150)
- st.write("Arvind Kumar", anchor=False)
+ st.subheader("Arvind Kumar", anchor=False) 
+ #st.write("Arvind Kumar", anchor=False)
 
 with col2:
-    st.title("Founder/Director", anchor=False)
-    st.write(", Actolaze Technology LLP, Kharwal Academy - The School of Programming")
+    #st.write("Founder/Director", anchor=False)
+    st.write("Founder/Director, Actolaze Technology LLP, Kharwal Academy - The School of Programming")
     if st.button("📧 Contact Me"):
         show_contact_form()
 
