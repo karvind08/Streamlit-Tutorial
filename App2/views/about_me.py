@@ -4,14 +4,14 @@ from forms.contacts import contact_form
 @st.dialog("Contact Me")
 def show_contact_form():
     contact_form()
-    
+
 st.title("About us")
 
 col1,col2 = st.columns(2,gap="small",vertical_alignment="center")
 
 with col1:
-    st.image("./assets/arvind.png", width=150)
-
+#   st.image("./assets/arvind.png", width=150)
+ st.title("Column Data", anchor=False)
 
 with col2:
     st.title("Arvind", anchor=False)

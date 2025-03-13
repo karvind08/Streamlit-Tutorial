@@ -33,6 +33,6 @@ pg = st.navigation(
     }
 )
 
-st.logo("assets/logo.png")
+#st.logo("assets/logo.png")
 st.sidebar.text("Made with 💕 by Arvind")
 pg.run()
