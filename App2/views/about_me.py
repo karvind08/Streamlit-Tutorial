@@ -1,2 +1,2 @@
 import streamlit as st
-st.title("About Me")
+st.title("About us")
