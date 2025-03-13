@@ -32,4 +32,7 @@ pg = st.navigation(
         "Projects": [project_1_page,project_2_page],
     }
 )
+
+st.logo("assets/logo.png")
+st.sidebar.text("Made with 💕 by Arvind")
 pg.run()
