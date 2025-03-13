@@ -19,5 +19,10 @@ project_2_page = st.Page(
     icon = ":material/smart_toy:",
 )
 
-pg = st.navigation(pages=[about_page,project_1_page,project_2_page])
+project_3_page = st.Page(
+    page = "views/contact.py",
+    title = "Contact",
+    icon = ":material/contact_page:",
+)
+pg = st.navigation(pages=[about_page,project_1_page,project_2_page,project_3_page])
 pg.run()
