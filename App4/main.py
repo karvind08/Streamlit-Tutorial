@@ -20,6 +20,7 @@ if rad == "Home":
     # #ax.scatter(data,data) 
     st.pyplot()
 if rad == "About us":
+    st.balloons()
     st.write("You are at About us Page")
     st.error("Error")
     st.success("Success")
@@ -31,3 +32,4 @@ if rad == "About us":
     for i in range(100):
         time.sleep(0.1)
         progress.progress(i+1)
+    st.balloons()
