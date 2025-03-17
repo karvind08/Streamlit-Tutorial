@@ -9,10 +9,14 @@ data = {
     'thrice': [x for x in range(1,11)]
 }
 df = pd.DataFrame(data= data)
-#st.sidebar.selectbox("Select a Number:",[1,2,3,4,5])
-#col = st.sidebar.selectbox('Select a Column',df.columns)
-col = st.sidebar.multiselect('Select a Column',df.columns)
-plt.plot(df['num'],df[col])
-#fig, ax = plt.subplots()
-#ax.scatter(data,data) 
-st.pyplot()
+rad = st.sidebar.radio("Navigantion",["Home","About us"])
+if rad == "Home":
+    #st.sidebar.selectbox("Select a Number:",[1,2,3,4,5])
+    col = st.sidebar.selectbox('Select a Column',df.columns)
+    # col = st.sidebar.multiselect('Select a Column',df.columns)
+    plt.plot(df['num'],df[col])
+    # #fig, ax = plt.subplots()
+    # #ax.scatter(data,data) 
+    st.pyplot()
+if rad == "About us":
+    st.write("You are at About us Page")
