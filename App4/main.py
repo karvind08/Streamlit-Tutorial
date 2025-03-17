@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from matplotlib import pyplot as plt
+import time
 plt.style.use("ggplot")
 data = {
     'num': [x for x in range(1,11)],
@@ -20,3 +21,13 @@ if rad == "Home":
     st.pyplot()
 if rad == "About us":
     st.write("You are at About us Page")
+    st.error("Error")
+    st.success("Success")
+    st.info("Information")
+    st.exception(RuntimeError("Run Time Error or Exception"))
+    st.warning("Warning")
+    st.subheader("Progress Bar")
+    progress = st.progress(0)
+    for i in range(100):
+        time.sleep(0.1)
+        progress.progress(i+1)
