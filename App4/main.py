@@ -10,6 +10,9 @@ data = {
 }
 df = pd.DataFrame(data= data)
 #st.sidebar.selectbox("Select a Number:",[1,2,3,4,5])
-col = st.sidebar.selectbox('Select a Column',df.columns)
+#col = st.sidebar.selectbox('Select a Column',df.columns)
+col = st.sidebar.multiselect('Select a Column',df.columns)
 plt.plot(df['num'],df[col])
-st.pyplot(fig=None)
+#fig, ax = plt.subplots()
+#ax.scatter(data,data) 
+st.pyplot()
