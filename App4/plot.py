@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
-
+import altair as alt
 
 data = pd.DataFrame(
     np.random.randn(100,3),
@@ -21,9 +21,15 @@ st.area_chart(data)
 st.subheader('Bar Chart')
 st.bar_chart(data)
 
-# Matplotlib
-plt.scatter(data['A'],data['B'])
-plt.title("Scatter Plot using Matplotlib")
-st.pyplot()
+# # Matplotlib
+# plt.scatter(data['A'],data['B'])
+# plt.title("Scatter Plot using Matplotlib")
+# st.pyplot()
 
-
+# Altair
+st.subheader('Altair ')
+chart = alt.Chart(data).mark_circle().encode(
+    x = 'A',
+    y = 'B'
+)
+st.altair_chart(chart)
