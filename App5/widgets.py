@@ -41,5 +41,11 @@ r1 = st.radio("Programming",pgs,index=0)
 st.subheader("Selectbox")
 pgs = ['C','C++','Python','Java']
 s1 = st.selectbox("Programming",pgs,index=2)
-
 st.write(r1,s1)
+
+st.subheader("Multi Select")
+st.multiselect("Programmings",pgs)
+
+ms = st.multiselect("Program",pgs)
+st.write(ms)
+
