@@ -19,4 +19,8 @@ st.write(address)
 
 st.subheader("Date")
 dt = st.date_input("Enter the date")
-st.write(dt)
+st.write(f"The date is {dt}")
+
+st.subheader("Time")
+tt = st.time_input("Enter time")
+st.write(f"The current time {tt}")
