@@ -10,7 +10,7 @@ data = {
     'thrice': [x for x in range(1,11)]
 }
 df = pd.DataFrame(data= data)
-rad = st.sidebar.radio("Navigantion",["Home","About us"])
+rad = st.sidebar.radio("Navigantion",["Home","About us",'display'])
 if rad == "Home":
     #st.sidebar.selectbox("Select a Number:",[1,2,3,4,5])
     col = st.sidebar.selectbox('Select a Column',df.columns)
