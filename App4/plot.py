@@ -57,3 +57,6 @@ st.image("logo.png",width=200)
 
 st.subheader("Audio")
 st.audio("https://soundcloud.com/audio-files/sets/new-yorkers-make-their-voices?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing")
+
+st.subheader("Video")
+st.video("https://youtu.be/-uCYHPV-kRc")
