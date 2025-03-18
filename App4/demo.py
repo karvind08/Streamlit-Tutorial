@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import time
 # Data 
 a = [1,2,3,4,5,6,7,8]
 n = np.array(a)
@@ -23,3 +24,16 @@ st.markdown(''' *** ''')
 
 data = pd.read_csv('award.csv')
 st.write(data)
+
+st.write(a)
+
+st.write(dict)
+
+st.write(nd)
+
+# Caching Mechanism in Streamlit
+
+# @st.cache
+# def ret_time():
+#     time.sleep(5)
+#     return time.time()
