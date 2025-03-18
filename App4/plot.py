@@ -41,6 +41,8 @@ diagraph {
 """)
 st.altair_chart(chart,use_container_width=True)
 
+st.subheader("Map")
+
 city = pd.DataFrame(
 {
     'mycity': ['Delhi','Chennai','Kolkata'],
@@ -50,5 +52,8 @@ city = pd.DataFrame(
 st.map(city)
 
 # Image
-
+st.subheader("Image")
 st.image("logo.png",width=200)
+
+st.subheader("Audio")
+st.audio("https://soundcloud.com/audio-files/sets/new-yorkers-make-their-voices?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing")
