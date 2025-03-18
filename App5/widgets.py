@@ -24,3 +24,10 @@ st.write(f"The date is {dt}")
 st.subheader("Time")
 tt = st.time_input("Enter time")
 st.write(f"The current time {tt}")
+
+st.subheader("Checkbox")
+st.checkbox("You accept Terms & condition",value=False)
+st.checkbox(" Another Terms & condition",value=True)
+
+if st.checkbox("Terms & condition",value=False):
+    st.write("Thank you")
