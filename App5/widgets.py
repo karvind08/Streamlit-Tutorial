@@ -62,3 +62,8 @@ st.subheader("Number Input")
 st.number_input("Enter the number")
 st.number_input("Number",min_value=3,max_value=70,value=33,step=2)
 st.number_input("Number",min_value=3.0,max_value=70.0,value=23.0,step=2.0)
+
+st.subheader("File Uploader")
+st.file_uploader("Upload the file")
+f = st.file_uploader("Image")
+st.image(f)
