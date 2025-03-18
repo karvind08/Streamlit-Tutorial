@@ -10,3 +10,7 @@ data = pd.DataFrame(
 # Line chart 
 st.subheader('Line Chart')
 st.line_chart(data)
+
+# Area chart 
+st.subheader('Area Chart')
+st.area_chart(data)
