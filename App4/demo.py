@@ -16,3 +16,10 @@ st.table(dict)
 st.markdown(''' *** ''')
 # Json File
 st.json(dict)
+
+st.markdown(''' *** ''')
+
+# CSV File
+
+data = pd.read_csv('award.csv')
+st.write(data)
