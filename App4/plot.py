@@ -48,3 +48,7 @@ city = pd.DataFrame(
     'lon': [77.069710,80.237617,88.363892],
 })
 st.map(city)
+
+# Image
+
+st.image("logo.png",width=200)
