@@ -31,3 +31,15 @@ st.checkbox(" Another Terms & condition",value=True)
 
 if st.checkbox("Terms & condition",value=False):
     st.write("Thank you")
+
+st.subheader("Radio")
+st.radio("Programming",['C','C++','Python'],index=0)
+pgs = ['C','C++','Python','Java']
+r1 = st.radio("Programming",pgs,index=0)
+
+
+st.subheader("Selectbox")
+pgs = ['C','C++','Python','Java']
+s1 = st.selectbox("Programming",pgs,index=2)
+
+st.write(r1,s1)
